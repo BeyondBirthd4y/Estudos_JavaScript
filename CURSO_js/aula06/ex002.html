@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My first program</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+    <!--Isso é um comentário HTML-->
+    <h1>Olá, mundo!!!</h1>
+    <p>Site Avulso</p>
+    <script>
+        var nome = window.prompt("Escreva seu nome:")//Abre uma janela para escrever o nome
+        window.alert("É um grande prazer te conhecer, " +nome)
+
+        var n1 = window.prompt("Digite um número:")
+        var n2 = window.prompt("Digite outro número:")
+        var s = parseInt(n1) + parseInt(n2)
+        /* + serve pra concatenação também. O prompt os transforma em string. number.parseInt() ou 
+        number.parseFloat() (ou apenas parseInt() ou parseFloat()) servem para transformar em números.
+        Eu posso também converter desde a variável, como também utilizar apenas o comando number() */
+
+        /*Para converter uma variável para string, podemos utilizar dois comandos:
+        String() e variavel.toString() */
+
+        // ${} serve para concatenar sem tirar das aspas.
+        // variavel.lenght diz quantos caracteres a string tem
+
+        /* variavel.toUpperCase() e variavel.toLowerCase() servem para colocar em letras maiúsculas
+        e minúsculas, respectivamente */
+
+        window.alert("A soma n1+n2= " + s)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeiros passos com DOM</title>
+    <link rel="stylesheet" type="text/css" href="../aula04/main.css">
+</head>
+<body>
+    <h1>Iniciando Estudos com DOM</h1>
+    <div class="msg">Clique aqui</div>
+    <p><strong>Divertido, né?</strong></p>
+    <br>
+    <script>
+        //DOM = Document Object Model
+        window.document.write("Olá mundo!!")
+        window.document.write(window.document.URL)
+        /*Faça uso do Live Server para ver sua página de forma
+        mais prática*/
+        var p1 = window.document.getElementsByTagName("p")[0]
+        window.document.write("Está escrito assim: "+ p1.innerText)
+        /*innerText mostra apenas o texto, enquanto que o innerHTML
+        pega também a formatação*/
+
+        //GetElement faz seleção de um elemento na página e usá-lo
+        var d = window.document.querySelector('div.msg')
+        d.style.background = "blue"
+
+        /*querySelector é uma maneira mais rápida (e recente)
+        de selecionar elementos*/
+    </script>
+</body>
+</html>

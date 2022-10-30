@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos DOM</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body> 
+    <div id="area">
+        <!--onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()"
+        Eventos utilizados dentro do HTML. Coloquei, da forma correta, dentro
+        do JavaScript--> 
+        Interaja...
+    </div>
+    <script>
+        var area= window.document.getElementById("area")
+        area.addEventListener("click", clicar)
+        area.addEventListener("mouseenter", entrar)
+        area.addEventListener("mouseout", sair)
+
+
+        function clicar(){
+            area.innerHTML ="<h1><strong>CLICOU</strong></h1>"
+            area.style.background ="red"
+        }
+
+        function entrar(){
+            area.innerHTML = "EnTrOu"
+            area.style.background ="blue"
+        }
+
+        function sair(){
+            area.innerHTML = "<em>Saiu</em>"
+            area.style.background ="gold"
+        }
+    </script>
+</body>
+</html>
